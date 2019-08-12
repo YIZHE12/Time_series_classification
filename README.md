@@ -24,6 +24,7 @@ For one example, the data looks like this:
 ## Solutions:
 This is a time series classification problem. I investigated in two solutions: a machine leanring one and a deep learning one.
 
+### Machine Learning
 For the machine learning solution, first, I started by aggregating the time-series data and do feature engineering using the python package [tsfresh](https://tsfresh.readthedocs.io/en/latest/). It automatically generate a list of time series features, such as the following:
 
 <img src = images/features.png height = 700>
@@ -38,10 +39,11 @@ I eventually chose to use ExtraTreesClassifier based on accuracy and speed trade
 
 <img src = images/tune.png height = 200>
 
+### Deep Learning
+I designed a 1D CNN + LSTM classifier for the time series data. The 1D CNN network extract features from the time series data in an effective manner. The LSTM layer, which is one time of recurrent neural networks can be used to further capture temporal dynamic features. For more information about LSTM and RNN, please visit my repo: https://github.com/YIZHE12/math_of_AI/tree/master/SequenceModel, in which I used numpy only to build RNN units. 
+
+One of the issue of our data is that it is highly unbalanced 
+I designed a 1D CNN + LSTM classifier for the time series data. The 1D CNN network extract features from the time series data in an effective manner. The LSTM layer, which is one time of recurrent neural networks can be used to further capture temporal dynamic features. For more information about LSTM and RNN, please visit my repo: https://github.com/YIZHE12/math_of_AI/tree/master/SequenceModel, in which I used numpy only to build RNN units.
 
 
-Here, I demonstrated how to use tsfresh for time series data feature extraction, and use different machine learning methods based on the extracted features. 
 
-I also used a 1D CNN + LSTM on the raw time series data without additonal steps in feature extracton. 
-
-Both methods have similar performance. 
