@@ -14,7 +14,7 @@ The input data has 10 sensor channels of and 128 measurements per time series pl
 
 -measurement_number: Measurement number within the series.
 
-<img src = images\data.png>
+<img src = images/data.png>
 
 ## EDA
 
