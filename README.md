@@ -16,7 +16,10 @@ The input data has 10 sensor channels of and 128 measurements per time series pl
 
 <img src = images/raw_data.png height = 300>
 
-## EDA
+For one example, the data looks like this:
+
+<img src = images/exp.png height = 300>
+
 
 ## Solutions:
 
