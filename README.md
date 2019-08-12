@@ -40,7 +40,7 @@ I eventually chose to use ExtraTreesClassifier based on accuracy and speed trade
 <img src = images/tune.png height = 200>
 
 ### Deep Learning
-I designed a 1D CNN + LSTM classifier for the time series data. The 1D CNN network extract features from the time series data in an effective manner. The LSTM layer, which is one time of recurrent neural networks can be used to further capture temporal dynamic features. For more information about RNN, please visit my repo: https://github.com/YIZHE12/math_of_AI/tree/master/SequenceModel, in which I used numpy only to build RNN units. 
+I designed a 1D CNN + LSTM classifier for the time series data. I added the batch norm in the input layer so that there is no need to do normalization on the raw data. The 1D CNN network extract features from the time series data in an effective manner. The LSTM layer, which is one time of recurrent neural networks can be used to further capture temporal dynamic features. For more information about RNN, please visit my repo: https://github.com/YIZHE12/math_of_AI/tree/master/SequenceModel, in which I used numpy only to build RNN units. 
 
 <img src = images/LSTM.png height = 200>
 
