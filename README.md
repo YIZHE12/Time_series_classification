@@ -40,10 +40,17 @@ I eventually chose to use ExtraTreesClassifier based on accuracy and speed trade
 <img src = images/tune.png height = 200>
 
 ### Deep Learning
-I designed a 1D CNN + LSTM classifier for the time series data. The 1D CNN network extract features from the time series data in an effective manner. The LSTM layer, which is one time of recurrent neural networks can be used to further capture temporal dynamic features. For more information about LSTM and RNN, please visit my repo: https://github.com/YIZHE12/math_of_AI/tree/master/SequenceModel, in which I used numpy only to build RNN units. 
+I designed a 1D CNN + LSTM classifier for the time series data. The 1D CNN network extract features from the time series data in an effective manner. The LSTM layer, which is one time of recurrent neural networks can be used to further capture temporal dynamic features. For more information about RNN, please visit my repo: https://github.com/YIZHE12/math_of_AI/tree/master/SequenceModel, in which I used numpy only to build RNN units. 
 
-One of the issue of our data is that it is highly unbalanced 
-I designed a 1D CNN + LSTM classifier for the time series data. The 1D CNN network extract features from the time series data in an effective manner. The LSTM layer, which is one time of recurrent neural networks can be used to further capture temporal dynamic features. For more information about LSTM and RNN, please visit my repo: https://github.com/YIZHE12/math_of_AI/tree/master/SequenceModel, in which I used numpy only to build RNN units.
+One issue of this data set is that it is highly unbalanced. To solve this problem, instead of using cross entropy as the cost function, I adapted the local loss cost function from https://arxiv.org/abs/1708.02002. It is a modulation of cross entropy with a dynamic term based on the confidence of the prediction, forcing the model to learn from the a few hard examples.
+
+<img src = images/focal_loss.png height = 400> (Tsung-Yi Lin, et al)
+
+
+
+
+
+
 
 
 
