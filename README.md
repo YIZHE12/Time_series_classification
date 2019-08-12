@@ -26,7 +26,7 @@ This is a time series classification problem. I investigated in two solutions: a
 
 For the machine learning solution, first, I started by aggregating the time-series data and do feature engineering using the python package [tsfresh](https://tsfresh.readthedocs.io/en/latest/). It automatically generate a list of time series features, such as the following:
 
-<img src = images/features.png height = 300>
+<img src = images/features.png height = 700>
 
 For the complete list of avaliable features, please visit: https://tsfresh.readthedocs.io/en/latest/text/list_of_features.html.
 
