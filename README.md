@@ -1,7 +1,10 @@
-# Time_series_classification
-Data can be downloaded in https://www.kaggle.com/c/career-con-2019/data
+# ML and DL help robots to navigate
 
-The goal of this project is to apply machine learning and deep learning methods to predict the surface typo that a robot is on based on time series data recorded by the robot's Inertial Measurement Units (IMU sensors).
+## Background
+he goal of this project is to apply machine learning and deep learning methods to predict the surface typo that a robot is on based on time series data recorded by the robot's Inertial Measurement Units (IMU sensors).
+
+## Data
+Data can be downloaded in https://www.kaggle.com/c/career-con-2019/data.
 
 The input data has 10 sensor channels of and 128 measurements per time series plus three ID columns:
 
@@ -10,6 +13,12 @@ The input data has 10 sensor channels of and 128 measurements per time series pl
 -series_id: ID number for the measurement series. Foreign key to y_train/sample_submission.
 
 -measurement_number: Measurement number within the series.
+
+## EDA
+
+## Solutions:
+
+
 
 
 
