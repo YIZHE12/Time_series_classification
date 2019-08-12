@@ -30,6 +30,14 @@ For the machine learning solution, first, I started by aggregating the time-seri
 
 For the complete list of avaliable features, please visit: https://tsfresh.readthedocs.io/en/latest/text/list_of_features.html.
 
+I then used a StratifiedKFold to seperate the data to train and validation set. The folds are made by preserving the percentage of samples for each class. I developed an automatic piplline to test different machine learning models, including knn, cart, svm, bayes, random forest, extra trees and gradient boosting models. 
+
+<img src = images/models.png height = 400>
+
+I eventually chose to use ExtraTreesClassifier based on accuracy and speed trade-off. I then used Grid Search Cross Validation for hyperparameters tuning.
+
+<img src = images/tune.png height = 200>
+
 
 
 Here, I demonstrated how to use tsfresh for time series data feature extraction, and use different machine learning methods based on the extracted features. 
