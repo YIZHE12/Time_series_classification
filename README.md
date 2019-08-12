@@ -22,12 +22,16 @@ For one example, the data looks like this:
 
 
 ## Solutions:
+This is a time series classification problem. I investigated in two solutions: a machine leanring one and a deep learning one.
+
+For the machine learning solution, first, I started by aggregating the time-series data and do feature engineering using the python package [tsfresh](https://tsfresh.readthedocs.io/en/latest/). It automatically generate a list of time series features, such as the following:
+
+<img src = images/features.png height = 300>
+
+For the complete list of avaliable features, please visit: https://tsfresh.readthedocs.io/en/latest/text/list_of_features.html.
 
 
 
-
-
-This is a time series classification problem.
 Here, I demonstrated how to use tsfresh for time series data feature extraction, and use different machine learning methods based on the extracted features. 
 
 I also used a 1D CNN + LSTM on the raw time series data without additonal steps in feature extracton. 
